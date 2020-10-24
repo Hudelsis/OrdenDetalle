@@ -1,0 +1,32 @@
+﻿<Window x:Class="OrdenDetalle.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OrdenDetalle"
+        mc:Ignorable="d"
+        Title="Registro de Pedido" Height="250" Width="350">
+    <Grid>
+      <StackPanel>
+           
+            <Menu IsMainMenu="True" VerticalAlignment="Top">
+                <MenuItem Header="Registros">
+                    <MenuItem x:Name="rPedidosMenuItem"  Header="Registro de Pedidos" Click="rPedidosMenuItem_Click" />
+                </MenuItem>
+
+                <MenuItem Header="Consultas">
+                    <MenuItem x:Name= "cPedidosMenuItem" Header="Consulta Pedidos" Click="cPedidosMenuItem_Click"/>
+                    <MenuItem x:Name= "cSuplidoresMenuItem" Header="Consulta _Suplidores" Click="cSuplidoresMenuItem_Click" />
+                    <MenuItem x:Name= "cProductosMenuItem" Header="_Consulta Producto" Click="cProductosMenuItem_Click" />
+                </MenuItem>
+
+                <MenuItem Header="Ayuda">
+                    <Menu/>
+                </MenuItem>
+            </Menu>
+        </StackPanel>
+        
+       
+
+    </Grid>
+</Window>
